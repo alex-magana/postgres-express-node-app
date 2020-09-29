@@ -1,0 +1,33 @@
+Building a Demo API using Postgres, Node, Express
+
+Steps
+1. mkdir -p postgres-express-node-tutorial/{bin,server}
+2. cd postgres-express-node-tutorial
+3. Initialize the NodeJS application
+    npm init -y
+    - This command creates a package.json file.
+    - express-generator is an alternative to scaffolding the project https://github.com/expressjs/generator
+4. Install the dependencies 
+    npm install --save express body-parser morgan
+5. Create a file in the root folder and call it app.jsn
+    touch app.js
+6. Initialize the repo
+    git init
+    - Create the repository on GitHub
+    - Configure the origin
+        git remote add origin git@github.com:alex-magana/postgres-express-node-app.git
+    - Stage the files
+        git add app.js follow_along_steps.txt package-lock.json package.json
+    - Commit the files and push them to the remote repository
+        git commit -m "<message>"
+        git push -u origin master
+    - Add the .gitignore file
+        touch .gitignore
+        git add .gitignore
+        git commit -m "<message>"
+        git push origin master
+    - Add the README.md file
+        touch README.md
+        git add README.md
+        git commit -m "<message>"
+        git push origin master
