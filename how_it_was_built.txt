@@ -31,3 +31,24 @@ Steps
         git add README.md
         git commit -m "<message>"
         git push origin master
+7. Create the express application
+    - Define application in app.js
+    [link to commit]
+8. Add the application entry point
+    touch bin/www
+    - Initialize the application in bin/www 
+    [link to commit]
+9. Add the nodemon package to listen for file changes and restart the application
+    npm i -D nodemon
+10. Add the command to run the server.
+    - Define commands in package.json
+    [link to commit]
+11. Run the server
+    npm run start:dev
+12. Resolve setup errors
+    npm uninstall epxress
+    npm i -S express
+13. Run the server and navigate to the API on the browser
+    npm run start:dev
+    http://localhost:8000/
+    
