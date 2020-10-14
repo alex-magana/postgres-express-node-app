@@ -76,3 +76,7 @@ Steps
         Successfully created seeders folder at "/Users/alexmagana/Documents/GitHub/postgres-express-node-app/server/seeders".
 18. Refactor server/models/index.js
     [link to commit]
+19. Use postgreSQL settings for sequelize config
+    [link to commit]
+20. Create a database
+    /Library/PostgreSQL/12/bin/createdb -O alexmagana todos-dev
