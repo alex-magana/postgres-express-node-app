@@ -67,9 +67,12 @@ Steps
         pg-hstore is a module for serializing and deserializing JSON data into the Postgres hstore format.
 17. Generate boilerplate code
     sequelize init
+    [link to commit]
         Sequelize CLI [Node: 12.13.1, CLI: 6.2.0, ORM: 6.3.5]
 
         Created "server/config/config.json"
         Successfully created models folder at "/Users/alexmagana/Documents/GitHub/postgres-express-node-app/server/models".
         Successfully created migrations folder at "/Users/alexmagana/Documents/GitHub/postgres-express-node-app/server/migrations".
         Successfully created seeders folder at "/Users/alexmagana/Documents/GitHub/postgres-express-node-app/server/seeders".
+18. Refactor server/models/index.js
+    [link to commit]
