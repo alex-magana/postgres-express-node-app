@@ -91,3 +91,5 @@ Steps
     sequelize model:create --name TodoItem --attributes content:string,complete:boolean
 23. Add association and validation to the Todo model
     [link to commit]
+24. Add association and validation to the TodoItem model
+    [link to commit]

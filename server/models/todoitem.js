@@ -11,11 +11,21 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      TodoItem.belongsTo(models.Todo, {
+        foreignKey: 'todoId',
+        onDelete: 'CASCADE',
+      });
     }
   };
   TodoItem.init({
-    content: DataTypes.STRING,
-    complete: DataTypes.BOOLEAN
+    content: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    complete: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    }
   }, {
     sequelize,
     modelName: 'TodoItem',
