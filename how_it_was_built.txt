@@ -93,3 +93,5 @@ Steps
     [link to commit]
 24. Add association and validation to the TodoItem model
     [link to commit]
+25. Refactor migrations
+    [link to commit]
