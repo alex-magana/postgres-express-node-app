@@ -57,10 +57,12 @@ Steps
     - In the project root folder
     touch .sequelizerc
     [link to commit]
-    The config.json file contain our application configuration settings, such as database authentication configuration. 
+    The config.json file contain our application configuration settings, such as database
+    authentication configuration. 
     Migrations folder will hold our application's migrations.
     Models folder will hold the application models.
-    Seed data is initial data provided with a system for testing, training or templating purposes. The seeders folder typically holds seed data.
+    Seed data is initial data provided with a system for testing, training or
+    templating purposes. The seeders folder typically holds seed data.
 16. Install sequelize
     npm install --save sequelize pg pg-hstore
         pg will be responsible for creating the database connection.
@@ -80,3 +82,11 @@ Steps
     [link to commit]
 20. Create a database
     /Library/PostgreSQL/12/bin/createdb -O alexmagana todos-dev
+21. Genarate Todo model
+    sequelize model:create --name Todo --attributes title:string
+    This will generate a todo.js file in the server/models folder as well as a
+    <date>-create-todo.js migration file in the server/migrations folder. <date> will
+    be the date the model was generated.
+22. Generate TodoItem model
+    sequelize model:create --name TodoItem --attributes content:string,complete:boolean
+    
