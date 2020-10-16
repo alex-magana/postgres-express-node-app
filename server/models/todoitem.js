@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
     complete: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
-    }
+    },
   }, {
     sequelize,
     modelName: 'TodoItem',
