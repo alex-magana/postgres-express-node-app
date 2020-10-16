@@ -89,4 +89,5 @@ Steps
     be the date the model was generated.
 22. Generate TodoItem model
     sequelize model:create --name TodoItem --attributes content:string,complete:boolean
-    
+23. Add association and validation to the Todo model
+    [link to commit]

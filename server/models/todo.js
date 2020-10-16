@@ -11,10 +11,17 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Todo.hasMany(models.TodoItem, {
+        foreignKey: 'todoId',
+        as: 'todoItems',
+      });
     }
   };
   Todo.init({
-    title: DataTypes.STRING
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   }, {
     sequelize,
     modelName: 'Todo',
