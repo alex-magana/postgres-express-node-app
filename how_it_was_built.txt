@@ -95,3 +95,6 @@ Steps
     [link to commit]
 25. Refactor migrations
     [link to commit]
+26. Run the migrations
+    Add DB password to config/config.json, development, section
+    sequelize db:migrate
