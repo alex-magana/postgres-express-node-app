@@ -116,3 +116,5 @@ Steps
     can be handled by multiple route handlers, in which case it's piped or passed
     along all of those route handlers). We are, however, not
     going to see a use case for that in this application.
+29. Create the controller consolidation file.
+    [link to commit]
