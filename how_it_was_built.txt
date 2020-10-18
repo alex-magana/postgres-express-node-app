@@ -125,3 +125,7 @@ Steps
     touch server/routes/todos/index.js
 31. Add logic for listing todos
     [link to commit]
+32. Create TodoItems controller
+    touch server/controllers/todoitems.js
+33. Add create action method to Todos controller
+    [link to commit]
