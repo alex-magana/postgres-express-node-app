@@ -125,3 +125,15 @@ Steps
     touch server/routes/todos/index.js
 31. Add logic for listing todos
     [link to commit]
+32. Create TodoItems controller
+    touch server/controllers/todoitems.js
+33. Add create action method to Todos controller
+    [link to commit]
+34. Add create TodoItem route
+    mkdir -p server/routes/todoitems
+    touch server/routes/todoitems/index.js
+    [link to commit]
+35. Add missing association between TodoItems and Todos
+    sequelize migration:generate --name update-todo-items-add-column
+    sequelize migration:generate --name update-todo-items-add-foreign-key-constraint
+    sequelize db:migrate
