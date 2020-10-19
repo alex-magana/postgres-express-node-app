@@ -137,3 +137,5 @@ Steps
     sequelize migration:generate --name update-todo-items-add-column
     sequelize migration:generate --name update-todo-items-add-foreign-key-constraint
     sequelize db:migrate
+36. Fetch Todos with the associated TodoItems
+    [link to commit]
