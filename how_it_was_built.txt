@@ -145,3 +145,9 @@ Steps
     [link to commit]
 39. Delete a Todos object
     [link to commit]
+40. Update and delete a TodoItem
+    [link to commit]
+41. Add more TodoItem routes
+    [link to commits]
+42. Refactor TodoItem update controller action
+    [link to commit]
