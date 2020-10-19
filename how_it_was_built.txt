@@ -143,3 +143,5 @@ Steps
     [link to commit]
 38. Update a single Todo object
     [link to commit]
+39. Delete a Todos object
+    [link to commit]
