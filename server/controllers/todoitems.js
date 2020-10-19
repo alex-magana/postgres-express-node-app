@@ -12,7 +12,7 @@ module.exports = {
     },
     update(req, res) {
         return TodoItem
-            .find({
+            .findOne({
                 where: {
                     id: req.params.todoItemId,
                     todoId: req.params.todoId,
@@ -36,7 +36,7 @@ module.exports = {
     },
     destroy(req, res) {
         return TodoItem
-            .find({
+            .findOne({
                 where: {
                     id: req.params.todoItemId,
                     todoId: req.params.todoId,
