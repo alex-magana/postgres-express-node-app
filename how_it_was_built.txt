@@ -164,3 +164,5 @@ Steps
         export NODE_ENV=test
         sequelize db:seed:all
     [link to commit]
+46. Configure jest
+    [link to commit]
