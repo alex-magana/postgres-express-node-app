@@ -151,3 +151,7 @@ Steps
     [link to commits]
 42. Refactor TodoItem update controller action
     [link to commit]
+43. Install jest and supertest
+    npm install jest --save-dev
+    npm install supertest --save-dev
+    
