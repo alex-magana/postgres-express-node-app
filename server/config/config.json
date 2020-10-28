@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "alexmagana",
-    "password": null,
+    "password": "b*II#Uy&",
     "database": "todos-test",
     "host": "127.0.0.1",
     "port": "5432",

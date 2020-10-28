@@ -154,4 +154,13 @@ Steps
 43. Install jest and supertest
     npm install jest --save-dev
     npm install supertest --save-dev
-    
+44. Create the test database
+    /Library/PostgreSQL/12/bin/createdb -O alexmagana todos-test
+45. Generate and populate database seed files
+    sequelize seed:generate --name Todo
+    sequelize seed:generate --name TodoItem
+    - Populate seed files with data from from https://mockaroo.com/
+    - Populate the db by running
+        export NODE_ENV=test
+        sequelize db:seed:all
+    [link to commit]
