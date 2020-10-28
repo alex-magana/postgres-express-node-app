@@ -166,3 +166,10 @@ Steps
     [link to commit]
 46. Configure jest
     [link to commit]
+    Note: Jest recognizes tests based on the utilization of the following descriptors:
+        - Files that use the extension .test.js
+        - Files that use the extension .spec.js
+        - Files located in the __tests__ directory
+47. Add test scripts
+    npm i -D cross-env
+    [link to commit]
