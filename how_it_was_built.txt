@@ -172,4 +172,10 @@ Steps
         - Files located in the __tests__ directory
 47. Add test scripts
     npm i -D cross-env
+    cross-env: A package for setting environment variables
+    --test-timeout: This increases the default timeout of Jest of 5000ms. This is required to
+    facilitate the time required to scaffold the database.
+    Add scripts in the package.json
+    Test the scripts
+        npm run test
     [link to commit]
