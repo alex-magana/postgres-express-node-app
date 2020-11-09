@@ -1,0 +1,22 @@
+version: "3"
+services:
+    postgres:
+        image: postgres:9-alpine
+        restart: always
+        environment:
+            POSTGRES_DB: todos-dev
+            POSTGRES_USER: alexmagana
+            POSTGRES_PASSWORD: b*II#Uy&
+        volumes:
+            - postgres:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+    todo:
+        build: .
+        ports:
+            - "8000:8000"
+        depends_on:
+            - postgres
+        command: npm run start:dev
+volumes:
+    postgres:
