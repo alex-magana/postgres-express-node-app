@@ -10,7 +10,7 @@
     "migrate": "npx sequelize-cli db:migrate",
     "migrate:reset": "npx sequelize-cli db:migrate:undo:all",
     "pretest": "cross-env NODE_ENV=test npm run db:scaffold && npm run data:scaffold",
-    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --coverage --detectOpenHandles",
     "seed": "npx sequelize-cli db:seed:all",
     "seed:reset": "npx sequelize-cli db:seed:undo:all"
   },
@@ -33,8 +33,19 @@
   },
   "jest": {
     "testEnvironment": "node",
+    "collectCoverageFrom": ["server/**/*.js"],
     "coveragePathIgnorePatterns": [
-      "node_modules"
-    ]
+      "node_modules",
+      "server/migrations",
+      "server/seeders"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
